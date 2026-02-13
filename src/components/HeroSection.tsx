@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, CalendarDays } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
   return (
@@ -51,7 +52,7 @@ const HeroSection = () => {
           </div>
 
           {/* Event details */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 text-foreground/60 font-body text-sm">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 text-foreground/60 font-body text-sm">
             <div className="flex items-center gap-2">
               <CalendarDays className="w-4 h-4 text-primary" />
               <span>26 de Abril de 2026</span>
@@ -61,6 +62,11 @@ const HeroSection = () => {
               <MapPin className="w-4 h-4 text-primary" />
               <span>Hotel Del Fiol – Tatuí</span>
             </div>
+          </div>
+
+          {/* Countdown */}
+          <div className="mb-10">
+            <CountdownTimer />
           </div>
 
           {/* CTAs */}
