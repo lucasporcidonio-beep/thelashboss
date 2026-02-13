@@ -51,6 +51,18 @@ const speakers = [
     bio: "Embaixadora Connect – Tatuí.",
     image: speakerBruna,
   },
+  {
+    name: "Aguarde...",
+    role: "Palestrante",
+    bio: "Em breve mais informações.",
+    image: speakerBruna,
+  },
+  {
+    name: "Aguarde...",
+    role: "Palestrante",
+    bio: "Em breve mais informações.",
+    image: speakerBruna,
+  },
 ];
 
 const SpeakersSection = () => {
