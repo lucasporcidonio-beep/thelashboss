@@ -92,7 +92,7 @@ const TicketsSection = () => {
               </ul>
 
               <a
-                href="#"
+                href="https://wa.me/5515974028094"
                 className={`block text-center py-3 px-6 font-body font-semibold text-sm tracking-wider uppercase rounded-sm transition-all duration-300 ${
                   ticket.featured
                     ? "bg-primary text-primary-foreground hover:bg-gold-light"
