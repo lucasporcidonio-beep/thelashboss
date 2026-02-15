@@ -1,16 +1,12 @@
 import { motion } from "framer-motion";
 import { MapPin, CalendarDays } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="Connect Tatuí palco" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-hero opacity-85" />
-      </div>
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-deep via-secondary to-background" />
 
       {/* Gold decorative line */}
       <div className="absolute top-0 left-0 right-0 h-[1px] gold-line" />

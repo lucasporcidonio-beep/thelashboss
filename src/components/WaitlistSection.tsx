@@ -88,13 +88,13 @@ const WaitlistSection = () => {
               {error && (
                 <p className="text-sm text-destructive font-body">{error}</p>
               )}
-              <a href="https://chat.whatsapp.com/DrZsbwanWX8Fo8004XcROL"
+              <button
                 type="submit"
                 disabled={loading}
                 className="w-full py-4 bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wider uppercase rounded-sm hover:bg-gold-light transition-colors duration-300 gold-glow disabled:opacity-50"
               >
                 {loading ? "Enviando..." : "Entrar para a Comunidade Connect"}
-              </a>
+              </button>
             </form>
           ) : (
             <motion.div

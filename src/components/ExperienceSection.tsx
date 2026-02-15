@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Users, Lightbulb, TrendingUp, Handshake, Sparkles } from "lucide-react";
-import experienceBg from "@/assets/experience-bg.jpg";
 
 const experiences = [
   { icon: Handshake, label: "Networking estratégico" },
@@ -17,11 +16,8 @@ const ExperienceSection = () => {
 
   return (
     <section className="py-24 md:py-32 relative overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img src={experienceBg} alt="Networking Connect Tatuí" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-background/90" />
-      </div>
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary to-background" />
 
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
         <motion.div

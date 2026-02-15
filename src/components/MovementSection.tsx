@@ -7,7 +7,7 @@ const MovementSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 md:py-32 bg-gradient-section relative">
+    <section className="py-24 md:py-32 bg-gradient-to-b from-background to-secondary relative">
       <div className="container mx-auto px-6">
         <div ref={ref} className="max-w-2xl mx-auto text-center">
           {/* Decorative line */}
