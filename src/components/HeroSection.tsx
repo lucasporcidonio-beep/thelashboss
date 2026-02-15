@@ -74,7 +74,7 @@ const HeroSection = () => {
               Quero Participar
             </a>
             <a
-              href="chat.whatsapp.com/DrZsbwanWX8Fo8004XcROL"
+              href="https://chat.whatsapp.com/DrZsbwanWX8Fo8004XcR0L"
               className="px-8 py-4 border border-primary/30 text-primary font-body font-medium text-sm tracking-wider uppercase rounded-sm hover:border-primary/60 hover:bg-primary/5 transition-all duration-300"
             >
               Entrar para o Grupo VIP
