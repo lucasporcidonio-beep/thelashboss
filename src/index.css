@@ -81,23 +81,6 @@
     background-clip: text;
   }
 
-  .bg-gradient-hero {
-    background: linear-gradient(
-      180deg,
-      hsl(280, 50%, 8%) 0%,
-      hsl(280, 40%, 12%) 50%,
-      hsl(290, 35%, 15%) 100%
-    );
-  }
-
-  .bg-gradient-section {
-    background: linear-gradient(
-      180deg,
-      hsl(280, 40%, 12%) 0%,
-      hsl(280, 30%, 8%) 100%
-    );
-  }
-
   .border-gold {
     border-color: hsl(43, 72%, 55%);
   }
