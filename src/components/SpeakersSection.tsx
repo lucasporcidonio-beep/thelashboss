@@ -1,67 +1,69 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import speakerMiguel from "@/assets/speaker-miguel.png";
-import speakerEster from "@/assets/speaker-ester.png";
-import speakerKelly from "@/assets/speaker-kelly.png";
-import speakerAmanda from "@/assets/speaker-amanda.png";
-import speakerNilton from "@/assets/speaker-nilton.png";
-import speakerGabi from "@/assets/speaker-gabi.png";
-import speakerBruna from "@/assets/speaker-bruna.png";
+// import speakerMiguel from "@/assets/speaker-miguel.png";
+// import speakerEster from "@/assets/speaker-ester.png";
+// import speakerKelly from "@/assets/speaker-kelly.png";
+// import speakerAmanda from "@/assets/speaker-amanda.png";
+// import speakerNilton from "@/assets/speaker-nilton.png";
+// import speakerGabi from "@/assets/speaker-gabi.png";
+// import speakerBruna from "@/assets/speaker-bruna.png";
+
+const placeholderImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
 
 const speakers = [
   {
     name: "Miguel Kelson",
     role: "Mestre de Cerimônia",
     bio: "Especialista em conduzir experiências que conectam palco e audiência.",
-    image: speakerMiguel,
+    image: placeholderImage,
   },
   {
     name: "Pra Ester Reis",
     role: "Palestrante",
     bio: "Referência em crescimento e posicionamento na área lash.",
-    image: speakerEster,
+    image: placeholderImage,
   },
   {
     name: "Kelly Rodrigues",
     role: "Palestrante",
     bio: "Posicionamento & Imagem Profissional.",
-    image: speakerKelly,
+    image: placeholderImage,
   },
   {
     name: "Amanda Mantovani",
     role: "Palestrante",
     bio: "Especialista em técnicas avançadas de lash design.",
-    image: speakerAmanda,
+    image: placeholderImage,
   },
   {
     name: "Nilton Alves",
     role: "Palestrante",
     bio: "Referência em técnica e inovação no universo lash.",
-    image: speakerNilton,
+    image: placeholderImage,
   },
   {
     name: "Gabi Alvares",
     role: "Embaixadora",
     bio: "Embaixadora Connect – Cesario Lange.",
-    image: speakerGabi,
+    image: placeholderImage,
   },
   {
     name: "Bruna Padilia",
     role: "Embaixadora",
     bio: "Embaixadora Connect – Tatuí.",
-    image: speakerBruna,
+    image: placeholderImage,
   },
   {
     name: "Aguarde...",
     role: "Palestrante",
     bio: "Em breve mais informações.",
-    image: speakerBruna,
+    image: placeholderImage,
   },
   {
     name: "Aguarde...",
     role: "Palestrante",
     bio: "Em breve mais informações.",
-    image: speakerBruna,
+    image: placeholderImage,
   },
 ];
 
