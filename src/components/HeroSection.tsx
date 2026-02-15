@@ -72,16 +72,16 @@ const HeroSection = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#ingressos"
+              href="https://wa.me/5515974028094"
               className="px-8 py-4 bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wider uppercase rounded-sm hover:bg-gold-light transition-colors duration-300 gold-glow"
             >
               Quero Participar
             </a>
             <a
-              href="#lista-espera"
+              href="chat.whatsapp.com/DrZsbwanWX8Fo8004XcROL"
               className="px-8 py-4 border border-primary/30 text-primary font-body font-medium text-sm tracking-wider uppercase rounded-sm hover:border-primary/60 hover:bg-primary/5 transition-all duration-300"
             >
-              Entrar para a Lista VIP
+              Entrar para o Grupo VIP
             </a>
           </div>
         </motion.div>
