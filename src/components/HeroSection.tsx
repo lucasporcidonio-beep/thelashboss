@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, CalendarDays } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
+import logo from "@/assets/logo.png";
 
 const HeroSection = () => {
   return (
@@ -42,19 +43,19 @@ const HeroSection = () => {
             Evento Presencial · Sorocaba
           </motion.p>
 
-          {/* Event name */}
-          <h1 className="font-display font-bold mb-6 leading-[1.1]">
-            <span className="text-foreground/50 text-2xl md:text-3xl font-light tracking-[0.35em] uppercase block mb-2">
-              The
-            </span>
-            <span className="text-6xl md:text-8xl lg:text-9xl shimmer-text">
-              LASH
-            </span>
-            <br />
-            <span className="text-foreground text-5xl md:text-7xl lg:text-8xl">
-              BOSS
-            </span>
-          </h1>
+          {/* Logo image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="flex justify-center mb-6"
+          >
+            <img
+              src={logo}
+              alt="The Lash Boss"
+              className="w-48 md:w-64 lg:w-72 drop-shadow-sm"
+            />
+          </motion.div>
 
           <p className="text-lg md:text-xl font-display font-light italic text-foreground/65 mb-3 max-w-xl mx-auto leading-relaxed">
             Transformando empreendedoras na sua potência máxima.
@@ -90,7 +91,7 @@ const HeroSection = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/5515974028094"
+              href="https://wa.me/5515997707464"
               className="px-10 py-4 bg-primary text-white font-body font-semibold text-sm tracking-wider uppercase rounded-sm hover:bg-gold-light transition-colors duration-300 gold-glow"
             >
               Quero Participar

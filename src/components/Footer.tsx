@@ -1,18 +1,39 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-border bg-white">
       <div className="container mx-auto px-6 text-center">
-        <p className="font-display font-bold text-lg mb-1">
-          <span className="text-foreground/40 font-light tracking-widest text-sm uppercase">The </span>
-          <span className="text-gradient-gold">LASH</span>{" "}
-          <span className="text-foreground">BOSS</span>
-        </p>
+        <img
+          src={logo}
+          alt="The Lash Boss"
+          className="w-20 mx-auto mb-3 opacity-90"
+        />
         <p className="text-xs font-body text-muted-foreground tracking-wider mb-1">
-          Sorocaba – SP
+          Sorocaba – SP · 22 de Junho de 2026
         </p>
         <p className="text-xs font-body text-muted-foreground tracking-wider">
           Crescimento • Propósito • Estratégia
         </p>
+        <div className="flex items-center justify-center gap-4 mt-4">
+          <a
+            href="https://wa.me/5515997707464"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-body text-primary hover:text-gold-dark transition-colors tracking-wider"
+          >
+            WhatsApp
+          </a>
+          <span className="text-border">·</span>
+          <a
+            href="https://www.instagram.com/thelashboss_sorocaba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-body text-primary hover:text-gold-dark transition-colors tracking-wider"
+          >
+            @thelashboss_sorocaba
+          </a>
+        </div>
         <p className="text-xs font-body text-muted-foreground mt-4">
           © 2026 The Lash Boss Sorocaba. Todos os direitos reservados.
         </p>

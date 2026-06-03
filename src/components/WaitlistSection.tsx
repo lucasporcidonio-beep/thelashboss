@@ -29,9 +29,17 @@ const WaitlistSection = () => {
             href="https://chat.whatsapp.com/DrZsbwanWX8Fo8004XcR0L"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block w-full py-4 bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wider uppercase rounded-sm hover:bg-gold-light transition-colors duration-300 gold-glow"
+            className="inline-block w-full py-4 bg-primary text-white font-body font-semibold text-sm tracking-wider uppercase rounded-sm hover:bg-gold-light transition-colors duration-300 gold-glow mb-3"
           >
             Entrar para a Comunidade Boss
+          </a>
+          <a
+            href="https://www.instagram.com/thelashboss_sorocaba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block w-full py-4 border border-primary/50 text-primary font-body font-medium text-sm tracking-wider uppercase rounded-sm hover:border-primary hover:bg-primary/5 transition-all duration-300"
+          >
+            Seguir no Instagram
           </a>
         </motion.div>
       </div>
