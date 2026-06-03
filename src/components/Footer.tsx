@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-border">
+    <footer className="py-12 border-t border-border bg-white">
       <div className="container mx-auto px-6 text-center">
         <p className="font-display font-bold text-lg mb-1">
-          <span className="text-foreground/70 font-light tracking-widest text-sm uppercase">The </span>
+          <span className="text-foreground/40 font-light tracking-widest text-sm uppercase">The </span>
           <span className="text-gradient-gold">LASH</span>{" "}
           <span className="text-foreground">BOSS</span>
         </p>

@@ -56,10 +56,10 @@ export default {
           light: "hsl(var(--gold-light))",
           dark: "hsl(var(--gold-dark))",
         },
-        purple: {
-          deep: "hsl(var(--purple-deep))",
-          mid: "hsl(var(--purple-mid))",
-          light: "hsl(var(--purple-light))",
+        champagne: "hsl(var(--champagne))",
+        cream: {
+          DEFAULT: "hsl(var(--cream))",
+          dark: "hsl(var(--cream-dark))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

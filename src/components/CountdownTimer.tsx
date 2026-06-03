@@ -45,7 +45,7 @@ const CountdownTimer = () => {
       {units.map((unit, i) => (
         <div key={unit.label} className="flex items-center gap-3 sm:gap-5">
           <div className="text-center">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-primary/25 rounded-sm bg-card/50 backdrop-blur-sm relative overflow-hidden">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-primary/30 rounded-sm bg-white/80 backdrop-blur-sm relative overflow-hidden shadow-sm">
               <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
               <span className="text-2xl sm:text-3xl font-display font-bold text-gradient-gold relative z-10">
                 {String(unit.value).padStart(2, "0")}

@@ -6,51 +6,52 @@
 
 @layer base {
   :root {
-    --background: 0 0% 6%;
-    --foreground: 40 20% 93%;
+    /* Light theme — white/cream + champagne gold (like reference images) */
+    --background: 40 20% 97%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 40 20% 93%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 40 20% 93%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 42 65% 62%;
-    --primary-foreground: 0 0% 6%;
+    --primary: 38 58% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 13%;
-    --secondary-foreground: 40 20% 93%;
+    --secondary: 40 20% 93%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 52%;
+    --muted: 40 15% 90%;
+    --muted-foreground: 0 0% 42%;
 
-    --accent: 0 0% 16%;
-    --accent-foreground: 40 20% 93%;
+    --accent: 40 25% 88%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 42 65% 62%;
+    --border: 40 15% 82%;
+    --input: 40 15% 82%;
+    --ring: 38 58% 50%;
 
     --radius: 0.25rem;
 
-    --gold: 42 65% 62%;
-    --gold-light: 42 75% 75%;
-    --gold-dark: 38 60% 44%;
-    --champagne: 42 55% 82%;
-    --noir: 0 0% 6%;
-    --noir-mid: 0 0% 12%;
+    --gold: 38 58% 50%;
+    --gold-light: 40 65% 65%;
+    --gold-dark: 36 52% 36%;
+    --champagne: 42 40% 78%;
+    --cream: 40 20% 97%;
+    --cream-dark: 40 18% 92%;
 
-    --sidebar-background: 0 0% 6%;
-    --sidebar-foreground: 40 20% 93%;
-    --sidebar-primary: 42 65% 62%;
-    --sidebar-primary-foreground: 0 0% 6%;
-    --sidebar-accent: 0 0% 13%;
-    --sidebar-accent-foreground: 40 20% 93%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 42 65% 62%;
+    --sidebar-background: 40 20% 97%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 38 58% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 20% 93%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 40 15% 82%;
+    --sidebar-ring: 38 58% 50%;
   }
 }
 
@@ -61,9 +62,9 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
-    background-image: 
-      radial-gradient(ellipse at 20% 50%, hsl(42 65% 62% / 0.03) 0%, transparent 60%),
-      radial-gradient(ellipse at 80% 10%, hsl(42 65% 62% / 0.04) 0%, transparent 50%);
+    background-image:
+      radial-gradient(ellipse at 20% 10%, hsl(38 58% 50% / 0.04) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 80%, hsl(38 58% 50% / 0.03) 0%, transparent 50%);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -75,9 +76,9 @@
   .text-gradient-gold {
     background: linear-gradient(
       135deg,
-      hsl(42, 75%, 80%) 0%,
-      hsl(42, 65%, 62%) 40%,
-      hsl(38, 60%, 44%) 100%
+      hsl(38, 65%, 38%) 0%,
+      hsl(38, 58%, 50%) 45%,
+      hsl(40, 65%, 65%) 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,41 +86,47 @@
   }
 
   .border-gold {
-    border-color: hsl(42, 65%, 62%);
+    border-color: hsl(38, 58%, 50%);
   }
 
   .gold-glow {
-    box-shadow: 0 0 40px -5px hsl(42 65% 62% / 0.25), 0 0 80px -20px hsl(42 65% 62% / 0.1);
+    box-shadow: 0 0 40px -5px hsl(38 58% 50% / 0.20), 0 4px 20px -8px hsl(38 58% 50% / 0.15);
   }
 
   .gold-line {
     background: linear-gradient(
       90deg,
       transparent 0%,
-      hsl(42, 65%, 62%) 30%,
-      hsl(42, 75%, 80%) 50%,
-      hsl(42, 65%, 62%) 70%,
+      hsl(38, 58%, 50%) 30%,
+      hsl(40, 65%, 65%) 50%,
+      hsl(38, 58%, 50%) 70%,
       transparent 100%
     );
   }
 
   .bg-gradient-section {
-    background: linear-gradient(180deg, hsl(0 0% 6%) 0%, hsl(0 0% 9%) 50%, hsl(0 0% 6%) 100%);
+    background: linear-gradient(180deg, hsl(40 20% 97%) 0%, hsl(40 20% 93%) 50%, hsl(40 20% 97%) 100%);
   }
 
   .shimmer-text {
     background: linear-gradient(
       90deg,
-      hsl(42, 65%, 62%) 0%,
-      hsl(42, 75%, 80%) 25%,
-      hsl(42, 65%, 62%) 50%,
-      hsl(38, 60%, 44%) 75%,
-      hsl(42, 65%, 62%) 100%
+      hsl(38, 52%, 36%) 0%,
+      hsl(38, 58%, 50%) 25%,
+      hsl(40, 65%, 65%) 50%,
+      hsl(38, 58%, 50%) 75%,
+      hsl(38, 52%, 36%) 100%
     );
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: shimmer 4s linear infinite;
+  }
+
+  .card-light {
+    background: white;
+    border: 1px solid hsl(40, 15%, 88%);
+    box-shadow: 0 2px 20px hsl(38 20% 60% / 0.08);
   }
 }
