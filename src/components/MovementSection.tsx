@@ -25,7 +25,7 @@ const MovementSection = () => {
             className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-8 leading-tight"
           >
             Mais do que um evento.{" "}
-            <span className="text-gradient-gold">Uma virada de posicionamento.</span>
+            <span className="text-gradient-gold">Uma virada de potência.</span>
           </motion.h2>
 
           <motion.div
@@ -35,13 +35,13 @@ const MovementSection = () => {
             className="space-y-6 text-foreground/70 font-body text-base md:text-lg leading-relaxed"
           >
             <p>
-              O Connect Tatuí nasceu para reunir lash designers que desejam mais do que técnica.
+              The Lash Boss nasceu para reunir empreendedoras que desejam mais do que técnica.
               Aqui você encontra estratégia, mentalidade e conexões que aceleram crescimento real.
             </p>
             <p className="text-foreground/90 font-medium italic font-display text-xl">
               Não é apenas sobre extensão de cílios.
               <br />
-              É sobre construir autoridade.
+              É sobre construir um império.
             </p>
           </motion.div>
         </div>

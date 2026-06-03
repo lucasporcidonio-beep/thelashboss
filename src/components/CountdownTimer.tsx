@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const EVENT_DATE = new Date("2026-04-26T09:00:00-03:00").getTime();
+const EVENT_DATE = new Date("2026-06-22T09:00:00-03:00").getTime();
 
 interface TimeLeft {
   days: number;
@@ -45,17 +45,18 @@ const CountdownTimer = () => {
       {units.map((unit, i) => (
         <div key={unit.label} className="flex items-center gap-3 sm:gap-5">
           <div className="text-center">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center border border-primary/20 rounded-sm bg-card/40 backdrop-blur-sm">
-              <span className="text-2xl sm:text-3xl font-display font-bold text-gradient-gold">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-primary/25 rounded-sm bg-card/50 backdrop-blur-sm relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
+              <span className="text-2xl sm:text-3xl font-display font-bold text-gradient-gold relative z-10">
                 {String(unit.value).padStart(2, "0")}
               </span>
             </div>
-            <p className="text-[10px] font-body text-muted-foreground mt-1.5 tracking-wider uppercase">
+            <p className="text-[10px] font-body text-muted-foreground mt-2 tracking-wider uppercase">
               {unit.label}
             </p>
           </div>
           {i < units.length - 1 && (
-            <span className="text-primary/40 text-lg font-light mb-4">:</span>
+            <span className="text-primary/40 text-xl font-light mb-5">:</span>
           )}
         </div>
       ))}

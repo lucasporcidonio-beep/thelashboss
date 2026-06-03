@@ -1,12 +1,13 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Users, Lightbulb, TrendingUp, Handshake, Sparkles } from "lucide-react";
+import { Users, Lightbulb, TrendingUp, Handshake, Sparkles, Crown } from "lucide-react";
 
 const experiences = [
-  { icon: Handshake, label: "Networking estratégico" },
-  { icon: Lightbulb, label: "Conteúdo prático e aplicável" },
-  { icon: TrendingUp, label: "Mentalidade de crescimento" },
-  { icon: Users, label: "Conexão com profissionais da região" },
+  { icon: Crown, label: "Mentalidade de Boss" },
+  { icon: Lightbulb, label: "Conteúdo estratégico e aplicável" },
+  { icon: TrendingUp, label: "Crescimento e autoridade" },
+  { icon: Handshake, label: "Networking entre empreendedoras" },
+  { icon: Users, label: "Conexão com profissionais de Sorocaba" },
   { icon: Sparkles, label: "Ambiente imersivo e inspirador" },
 ];
 
@@ -41,7 +42,7 @@ const ExperienceSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.15 * i }}
-              className="flex items-center gap-4 p-5 rounded-sm bg-card/60 backdrop-blur-sm border border-border hover:border-primary/20 transition-colors duration-300"
+              className="flex items-center gap-4 p-5 rounded-sm bg-card/60 backdrop-blur-sm border border-border hover:border-primary/30 transition-colors duration-300"
             >
               <exp.icon className="w-5 h-5 text-primary shrink-0" />
               <span className="font-body text-sm text-foreground/80">{exp.label}</span>

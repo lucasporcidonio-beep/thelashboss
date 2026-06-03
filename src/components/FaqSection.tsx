@@ -4,16 +4,16 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "Quando e onde será o Connect Tatuí?",
-    answer: "O evento será no dia 26 de Abril de 2026, no Hotel Del Fiol, em Tatuí – SP.",
+    question: "Quando e onde será o The Lash Boss Sorocaba?",
+    answer: "O evento será no dia 22 de Junho de 2026, em Sorocaba – SP. O endereço exato será divulgado em breve para os inscritos.",
   },
   {
     question: "Preciso ser lash designer para participar?",
-    answer: "O evento é voltado para lash designers e profissionais da área de beleza que desejam crescer em posicionamento, técnica e mentalidade. Se você atua ou deseja atuar nesse mercado, o Connect é para você.",
+    answer: "O evento é voltado para lash designers e empreendedoras da área de beleza que desejam crescer em posicionamento, técnica e mentalidade. Se você atua ou deseja atuar nesse mercado, o Lash Boss é para você.",
   },
   {
-    question: "Qual a diferença entre o ingresso Lash Elite e Lash VIP?",
-    answer: "O Lash Elite garante acesso completo ao evento, conteúdo e coffee break. Já o Lash VIP inclui tudo do Elite, mais lugar reservado nas primeiras filas, networking exclusivo com palestrantes, kit VIP e acesso ao grupo pós-evento.",
+    question: "Qual a diferença entre o ingresso Boss Elite e Boss VIP?",
+    answer: "O Boss Elite garante acesso completo ao evento, conteúdo exclusivo, certificado e coffee break. Já o Boss VIP inclui tudo do Elite, mais lugar reservado nas primeiras filas, networking exclusivo com palestrantes, kit VIP e acesso ao grupo pós-evento.",
   },
   {
     question: "Posso parcelar o ingresso?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "Como funciona a lista de espera?",
-    answer: "Ao se cadastrar na lista de espera, você será notificada em primeira mão sobre a próxima edição do Connect, com acesso antecipado à venda de ingressos e condições especiais.",
+    answer: "Ao se cadastrar na lista de espera, você será notificada em primeira mão sobre novidades, com acesso antecipado à venda de ingressos e condições especiais.",
   },
   {
     question: "O evento terá certificado?",

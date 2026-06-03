@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,51 +6,51 @@
 
 @layer base {
   :root {
-    --background: 280 30% 8%;
-    --foreground: 40 30% 92%;
+    --background: 0 0% 6%;
+    --foreground: 40 20% 93%;
 
-    --card: 280 25% 12%;
-    --card-foreground: 40 30% 92%;
+    --card: 0 0% 10%;
+    --card-foreground: 40 20% 93%;
 
-    --popover: 280 25% 12%;
-    --popover-foreground: 40 30% 92%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 20% 93%;
 
-    --primary: 43 72% 55%;
-    --primary-foreground: 280 30% 8%;
+    --primary: 42 65% 62%;
+    --primary-foreground: 0 0% 6%;
 
-    --secondary: 280 20% 18%;
-    --secondary-foreground: 40 30% 92%;
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 40 20% 93%;
 
-    --muted: 280 15% 16%;
-    --muted-foreground: 280 10% 55%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 52%;
 
-    --accent: 290 35% 22%;
-    --accent-foreground: 40 30% 92%;
+    --accent: 0 0% 16%;
+    --accent-foreground: 40 20% 93%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 280 15% 20%;
-    --input: 280 15% 20%;
-    --ring: 43 72% 55%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 42 65% 62%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
-    --gold: 43 72% 55%;
-    --gold-light: 43 80% 70%;
-    --gold-dark: 43 65% 40%;
-    --purple-deep: 280 50% 12%;
-    --purple-mid: 280 40% 20%;
-    --purple-light: 290 30% 30%;
+    --gold: 42 65% 62%;
+    --gold-light: 42 75% 75%;
+    --gold-dark: 38 60% 44%;
+    --champagne: 42 55% 82%;
+    --noir: 0 0% 6%;
+    --noir-mid: 0 0% 12%;
 
-    --sidebar-background: 280 30% 8%;
-    --sidebar-foreground: 40 30% 92%;
-    --sidebar-primary: 43 72% 55%;
-    --sidebar-primary-foreground: 280 30% 8%;
-    --sidebar-accent: 280 20% 18%;
-    --sidebar-accent-foreground: 40 30% 92%;
-    --sidebar-border: 280 15% 20%;
-    --sidebar-ring: 43 72% 55%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 40 20% 93%;
+    --sidebar-primary: 42 65% 62%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 0 0% 13%;
+    --sidebar-accent-foreground: 40 20% 93%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 42 65% 62%;
   }
 }
 
@@ -61,6 +61,9 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    background-image: 
+      radial-gradient(ellipse at 20% 50%, hsl(42 65% 62% / 0.03) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 10%, hsl(42 65% 62% / 0.04) 0%, transparent 50%);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -72,9 +75,9 @@
   .text-gradient-gold {
     background: linear-gradient(
       135deg,
-      hsl(43, 80%, 70%) 0%,
-      hsl(43, 72%, 55%) 50%,
-      hsl(43, 65%, 40%) 100%
+      hsl(42, 75%, 80%) 0%,
+      hsl(42, 65%, 62%) 40%,
+      hsl(38, 60%, 44%) 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -82,19 +85,41 @@
   }
 
   .border-gold {
-    border-color: hsl(43, 72%, 55%);
+    border-color: hsl(42, 65%, 62%);
   }
 
   .gold-glow {
-    box-shadow: 0 0 30px -5px hsl(43 72% 55% / 0.15);
+    box-shadow: 0 0 40px -5px hsl(42 65% 62% / 0.25), 0 0 80px -20px hsl(42 65% 62% / 0.1);
   }
 
   .gold-line {
     background: linear-gradient(
       90deg,
       transparent 0%,
-      hsl(43, 72%, 55%) 50%,
+      hsl(42, 65%, 62%) 30%,
+      hsl(42, 75%, 80%) 50%,
+      hsl(42, 65%, 62%) 70%,
       transparent 100%
     );
+  }
+
+  .bg-gradient-section {
+    background: linear-gradient(180deg, hsl(0 0% 6%) 0%, hsl(0 0% 9%) 50%, hsl(0 0% 6%) 100%);
+  }
+
+  .shimmer-text {
+    background: linear-gradient(
+      90deg,
+      hsl(42, 65%, 62%) 0%,
+      hsl(42, 75%, 80%) 25%,
+      hsl(42, 65%, 62%) 50%,
+      hsl(38, 60%, 44%) 75%,
+      hsl(42, 65%, 62%) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
   }
 }

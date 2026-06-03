@@ -4,26 +4,26 @@ import { Check } from "lucide-react";
 
 const tickets = [
   {
-    name: "Lash Elite",
+    name: "Boss Elite",
     price: "R$ 247",
-    description: "Para quem quer participar, aprender e começar a se posicionar.",
+    description: "Para quem quer participar, aprender e começar a se posicionar como empreendedora.",
     features: [
       "Acesso completo ao evento",
-      "Conteúdo exclusivo",
+      "Conteúdo exclusivo com palestrantes",
       "Certificado de participação",
       "Coffee break",
     ],
     featured: false,
   },
   {
-    name: "Lash VIP",
+    name: "Boss VIP",
     price: "R$ 347",
-    description: "Para quem quer proximidade, destaque e networking estratégico.",
+    description: "Para quem quer proximidade, destaque e networking estratégico de alto nível.",
     features: [
-      "Tudo do Lash Elite",
+      "Tudo do Boss Elite",
       "Lugar reservado nas primeiras filas",
       "Networking exclusivo com palestrantes",
-      "Kit VIP Connect",
+      "Kit VIP The Lash Boss",
       "Acesso ao grupo VIP pós-evento",
     ],
     featured: true,
@@ -49,6 +49,9 @@ const TicketsSection = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold">
             Garanta seu <span className="text-gradient-gold">lugar</span>
           </h2>
+          <p className="mt-4 text-foreground/60 font-body text-sm">
+            22 de Junho de 2026 · Sorocaba – SP
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -60,8 +63,8 @@ const TicketsSection = () => {
               transition={{ duration: 0.8, delay: 0.2 + i * 0.15 }}
               className={`relative rounded-sm p-8 border transition-all duration-300 ${
                 ticket.featured
-                  ? "bg-card border-primary/40 gold-glow"
-                  : "bg-card/60 border-border hover:border-primary/20"
+                  ? "bg-card border-primary/50 gold-glow"
+                  : "bg-card/60 border-border hover:border-primary/25"
               }`}
             >
               {ticket.featured && (

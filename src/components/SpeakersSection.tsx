@@ -1,57 +1,44 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import speakerMiguel from "@/assets/speaker-miguel.png";
-import speakerEster from "@/assets/speaker-ester.png";
-import speakerKelly from "@/assets/speaker-kelly.png";
-import speakerAmanda from "@/assets/speaker-amanda.png";
-import speakerNilton from "@/assets/speaker-nilton.png";
-import speakerGabi from "@/assets/speaker-gabi.png";
-import speakerBruna from "@/assets/speaker-bruna.png";
 
 const placeholderImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
 
 const speakers = [
   {
-    name: "Miguel Kelson",
-    role: "Mestre de Cerimônia",
-    bio: "Especialista em conduzir experiências que conectam palco e audiência.",
-    image: speakerMiguel,
-  },
-  {
-    name: "Pra Ester Reis",
+    name: "Mariane Sales",
     role: "Palestrante",
     bio: "Referência em crescimento e posicionamento na área lash.",
-    image: speakerEster,
+    image: placeholderImage,
   },
   {
-    name: "Kelly Rodrigues",
+    name: "Patricia Arruda",
     role: "Palestrante",
-    bio: "Posicionamento & Imagem Profissional.",
-    image: speakerKelly,
+    bio: "Especialista em posicionamento e imagem profissional.",
+    image: placeholderImage,
+  },
+  {
+    name: "Mariane Salles",
+    role: "Palestrante",
+    bio: "Estratégia e mentalidade empreendedora no universo lash.",
+    image: placeholderImage,
   },
   {
     name: "Amanda Mantovani",
     role: "Palestrante",
-    bio: "Especialista em técnicas avançadas de lash design.",
-    image: speakerAmanda,
+    bio: "Especialista em técnicas avançadas e empreendedorismo lash.",
+    image: placeholderImage,
   },
   {
-    name: "Nilton Alves",
-    role: "Palestrante",
-    bio: "Referência em técnica e inovação no universo lash.",
-    image: speakerNilton,
+    name: "Fernanda Araújo",
+    role: "Idealizadora",
+    bio: "Co-criadora do The Lash Boss Sorocaba.",
+    image: placeholderImage,
   },
   {
-    name: "Gabi Alvares",
-    role: "Embaixadora",
-    bio: "Embaixadora Connect – Cesario Lange.",
-    image: speakerGabi,
-  },
-  {
-    name: "Bruna Padilia",
-    role: "Embaixadora",
-    bio: "Embaixadora Connect – Tatuí.",
-    image: speakerBruna,
+    name: "Iasmine Cleim",
+    role: "Idealizadora",
+    bio: "Co-criadora do The Lash Boss Sorocaba.",
+    image: placeholderImage,
   },
   {
     name: "Aguarde...",
@@ -84,18 +71,19 @@ const SpeakersSection = () => {
             Palestrantes
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold">
-            Quem sobe ao palco no <span className="text-gradient-gold">Connect</span>
+            Quem sobe ao palco no{" "}
+            <span className="text-gradient-gold">Lash Boss</span>
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {speakers.map((speaker, i) => (
             <motion.div
-              key={speaker.name}
+              key={`${speaker.name}-${i}`}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.1 + i * 0.08 }}
-              className="group relative bg-card rounded-sm overflow-hidden border border-border hover:border-primary/30 transition-all duration-500"
+              className="group relative bg-card rounded-sm overflow-hidden border border-border hover:border-primary/40 transition-all duration-500"
             >
               <div className="aspect-[3/4] overflow-hidden">
                 <img
@@ -103,16 +91,16 @@ const SpeakersSection = () => {
                   alt={speaker.name}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <p className="text-xs font-body tracking-[0.3em] uppercase text-primary mb-1">
                   {speaker.role}
                 </p>
-                <h3 className="text-lg font-display font-bold text-foreground mb-1">
+                <h3 className="text-base font-display font-bold text-foreground mb-1">
                   {speaker.name}
                 </h3>
-                <p className="text-xs font-body text-foreground/60 leading-relaxed">
+                <p className="text-xs font-body text-foreground/55 leading-relaxed">
                   {speaker.bio}
                 </p>
               </div>
