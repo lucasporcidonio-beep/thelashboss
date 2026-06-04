@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-wide.png";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <img
           src={logo}
           alt="The Lash Boss"
-          className="w-20 mx-auto mb-3 opacity-90"
+          className="w-32 mx-auto mb-3 opacity-90 mix-blend-multiply"
         />
         <p className="text-xs font-body text-muted-foreground tracking-wider mb-1">
           Sorocaba – SP · 22 de Junho de 2026

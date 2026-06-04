@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, CalendarDays } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-wide.png";
 
 const HeroSection = () => {
   return (
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <img
               src={logo}
               alt="The Lash Boss"
-              className="w-48 md:w-64 lg:w-72 drop-shadow-sm"
+              className="w-64 md:w-80 lg:w-96 drop-shadow-sm mix-blend-multiply"
             />
           </motion.div>
 
